@@ -2,6 +2,8 @@
 ### inplace_abn
 Also, we use In-Place Activated BatchNorm.   
 First, you need to clone and compile inplace_abn.
+버전 호환 문제로 requirements.txt 수정필요.
+
 ```
 git clone https://github.com/mapillary/inplace_abn.git
 cd inplace_abn

@@ -63,6 +63,7 @@ test_id.txt
 test_labels.txt : class 별 id   
 
 ## Train
+CUDA_VISIBLE_DEVICES=0,1,2,3,5,6,7 python -m torch.distributed.launch --nproc_per_node=4 train_NIA.py --random-mirror --random-scale --gpu 0,1,2,3,4,5,6,7 --learning-rate 1e-3 --weight-decay 5e-4 --batch-size 7 --input-size 473,473 --snapshot-dir ./snapshots/ --dataset train --num-classes 11 --epochs 1
 > train_NIA.py   
 
 ## Test

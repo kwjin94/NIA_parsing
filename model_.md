@@ -26,10 +26,10 @@ Backbone으로 ResNet-101을 수정하여 사용했다. Conv2, Conv5 layer의 ou
  - segmentation
  
 ## training dataset
-NIA dataset (150,000)
-80% used for training (120,000 source images, grayscale images, edge images)
-10% used for validation (15,000 source images, grayscale images, edge images)
-10% used for testing (15,000 source images, grayscale images, edge images)
+NIA dataset (150,000)<br/>
+80% used for training (120,000 source images, grayscale images, edge images)<br/>
+10% used for validation (15,000 source images, grayscale images, edge images)<br/>
+10% used for testing (15,000 source images, grayscale images, edge images)<br/>
 
 
 ## training 요소들

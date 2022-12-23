@@ -18,13 +18,28 @@ Backbone으로 ResNet-101을 수정하여 사용했다. Conv2, Conv5의 output�
 - (3, 512, 512)
 ## Output
 - (19, 512, 512)
+- 
 ## task
  - segmentation
+ 
 ## training dataset
 gkrtmq eotkddl ehlsms epdlxj
+
 ## training 요소들
-loss function, optimize, epoch, learning rate, batch size
+- loss function
+- cross entropy loss를 기본으로 쓴다.
+- Boundary-Attention loss (BA-loss) : cross entropy loss에서 edge 부분의 loss를 보기 위해 iverson bracket을 추가해준 loss이다.
+- optimizer : Stochastic Gradient Descent (SGD)
+- epoch : 30
+- learinng rate : 0.003
+- batch size : 7
+
+## evaluation metric
+- 검증 목표 : F1 score = 70
+- 달성 수치 : F1 score = 79.76
+
 ## evaluation metric
 f1-score
+
 ## 저작권
 PID

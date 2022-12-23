@@ -23,7 +23,7 @@ Backbone으로 ResNet-101을 수정하여 사용했다. Conv2, Conv5 layer의 ou
 - (19, 512, 512)
 
 ## task
- - segmentation
+ - Segmentation
  
 ## training dataset
 NIA dataset (150,000)<br/>

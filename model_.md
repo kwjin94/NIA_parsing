@@ -14,7 +14,7 @@ Adaptive Graph Projection은 정점으로 구성 요소 특징을 추출하고, 
 <img width="639" alt="image" src="https://user-images.githubusercontent.com/112538268/209280304-5410c669-0ece-4216-bd0e-545761e7bb5f.png">
 사진 [Architecture  of  the  proposed  adaptive  graph  representation  learning  and  reasoning  for  face  parsing]<br/>  
 <br/>
-Backbone으로 ResNet-101을 수정하여 사용했다. Conv2, Conv5의 output을 사용하고, 2개 block의 dilated 컨볼루션을 사용하여 conv2, conv3, conv4의 출력으로 edge map을 예측했다.
+Backbone으로 ResNet-101을 수정하여 사용했다. Conv2, Conv5 layer의 output을 multi-scale representations를 위한 낮은 레벨과 높은 레벨 피처맵으로써 추출했다. Spatial sapce의 information loss를 줄이기 위해서, Dilated 컨볼루션을 사용하여 마지막 두개 block의 크기를 줄였다. Conv2, Conv3, Conv4의 출력으로 edge map을 예측했다.
 
 
 ## Input
@@ -26,7 +26,11 @@ Backbone으로 ResNet-101을 수정하여 사용했다. Conv2, Conv5의 output�
  - segmentation
  
 ## training dataset
-gkrtmq eotkddl ehlsms epdlxj
+NIA dataset (150,000)
+80% used for training (120,000 source images, grayscale images, edge images)
+10% used for validation (15,000 source images, grayscale images, edge images)
+10% used for testing (15,000 source images, grayscale images, edge images)
+
 
 ## training 요소들
 - loss function
@@ -41,8 +45,6 @@ gkrtmq eotkddl ehlsms epdlxj
 - 검증 목표 : F1 score = 70
 - 달성 수치 : F1 score = 79.76
 
-## evaluation metric
-f1-score
 
 ## 저작권
-PID
+????

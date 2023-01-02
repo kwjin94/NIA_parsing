@@ -68,3 +68,23 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,5,6,7 python -m torch.distributed.launch --nproc_pe
 
 ## Test
 > evaluate.py
+
+## Reference
+@inproceedings{te2020edge,
+  title={Edge-aware Graph Representation Learning and Reasoning for Face Parsing},
+  author={Te, Gusi and Liu, Yinglu and Hu, Wei and Shi, Hailin and Mei, Tao},
+  booktitle={European Conference on Computer Vision},
+  pages={258--274},
+  year={2020},
+  organization={Springer}
+}
+
+@article{te2021agrnet,
+  title={Agrnet: Adaptive graph representation learning and reasoning for face parsing},
+  author={Te, Gusi and Hu, Wei and Liu, Yinglu and Shi, Hailin and Mei, Tao},
+  journal={IEEE Transactions on Image Processing},
+  volume={30},
+  pages={8236--8250},
+  year={2021},
+  publisher={IEEE}
+}
